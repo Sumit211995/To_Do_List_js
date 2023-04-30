@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo_List</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="container">
+
+        <h1>To-Do List</h1>
+
+        <div class="new-task-container box">
+
+            <label id="todotask" class="todotask" for="new-task">Add Task:</label>
+            <input type="text" id="new-task" placeholder="Write your task...">
+            <button id="addTask" class="btn"><i class="fa fa-plus"></i></button>
+            <button id="editTask" class="edit-btn">Save</button>
+            <label id="tasklist" class="tasklist" for="task">Tasks:</label>
+            <select name="todos" class="filter-todos">
+                <option value="All">All</option>
+                <option value="Complete">Complete Task</option>
+                <option value="Incomplete">Incomplete Task</option>
+            </select>
+
+
+
+        </div>
+
+        <div class="todo-list box">
+            <ul>
+            </ul>
+        </div>
+
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
